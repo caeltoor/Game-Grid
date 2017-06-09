@@ -1,0 +1,19 @@
+.tileHolder { height:136px; width:292px;border-radius:25px;-moz-border-radius:25px;display:inline-block;margin:7px;margin-top:3px;}
+.tile { height:136px; width:292px;border-radius:25px;-moz-border-radius:25px;display:inline-block;margin:7px;margin-top:3px;position:absolute;}
+.stats {margin:20px 0px 0px 20px; color:#FFEEFF;}
+.appName {opacity:0;position:absolute;cursor:default;z-index:-1;} /*Used to implement basic ctrl+f searching*/
+.hidden { display:none;} /*Added and removed from .tileHolder to implement filtering via search bar*/
+body {background-color:#272727; margin:0;}
+a#homeLink {text-decoration:none;}
+a#homeLink:link {color:#FFFFFF;}
+a#homeLink:visited {color:#FFFFFF;}
+a#homeLink:hover {color:#FFFFFF;}
+a#homeLink:active {color:#FFFFFF;}
+#header {color:#FFEEFF;text-align:center;}
+#formHolder { background-color:#707070; margin:100px auto auto; padding-top:10px; height:136px; width:292px;border-radius:25px;-moz-border-radius:25px;}
+#instructions { font-size:16px; color:#FFEEFF; text-align:center;}
+#usernameForm { margin:0 auto; text-align:center;}
+#error { text-align: center; color:#9B1414;}
+#loading { text-align: center;}
+#aaronBar { background-color:#000000; color:#FFFFFF; height:27px;}
+#searchDiv { display:none; float:right;}
