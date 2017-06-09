@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="games" type="gameList"/>
+
+	<xs:complexType name="gameList">
+		<xs:sequence>
+			<xs:element name="game" type="gameInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="gameInfo">
+		<xs:sequence>
+			<xs:element name="appId" type="xs:integer">
+			<xs:element name="picAvailable" type="xs:boolean">
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
