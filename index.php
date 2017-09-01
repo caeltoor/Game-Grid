@@ -7,19 +7,21 @@ $username = isset($_GET["id"]) ? $_GET['id'] : '';
 	<head>
 		<meta charset="utf-8" />
 		<title>Steam grid test form</title>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="js/formReload.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/grid.css">
 	</head>
 	<body>
-	<div id="aaronBar">
-		<a href="index.php" id="homeLink">Test</a>
-		<div id="searchDiv">
+	<nav class="navbar navbar-dark bg-dark sticky-top">
+		<a class="navbar-brand" href="#">Game Grid</a>
+		
+		<div class="nav-item" id="searchDiv">
 			<form id="searchForm">
-				<input type="text" id="searchId" />
+				<input type="text" placeholder="Filter games by name" id="searchId" />
 			</form>
 		</div>
-	</div>
+	</nav>
 <?php
 if(!$username) {
 	echo "
@@ -50,7 +52,7 @@ else {
 				});
 		";
 }
-echo "
+?>
 				$('form#usernameForm').submit(function(event){
 					event.preventDefault();
 					$('#submit').click();
@@ -84,7 +86,7 @@ echo "
 			<div id='error'></div>
 		</div>
 		<div id='loading'></div>
+		<div id ='gameHolder'></div>
 	";
-?>
 </body>
 </html>

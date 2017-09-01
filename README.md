@@ -1,6 +1,6 @@
 ## Game Grid's Purpose
 
-Game Grid was originally written by myself and Ben Tapio in Fall 2013, before the Steam API existed, to be able to display your steam library using the grid display from the steam client online.
+Game Grid was originally written by myself and Ben Tapio in Fall 2012, before the Steam API existed, to be able to display your steam library using the grid display from the steam client online.
 
 ## How v1 worked
 
